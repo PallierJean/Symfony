@@ -1,0 +1,7 @@
+j_pa_plateform:
+    resource: "@JPaPlateformBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

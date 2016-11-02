@@ -1,0 +1,7 @@
+j_pa_plateform_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: JPaPlateformBundle:Default:index }
+
+hello_the_world:
+    path:      /hello-world
+    defaults: { _controller: JPaPlateformBundle:Advert:index }

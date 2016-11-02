@@ -1,0 +1,4 @@
+services:
+#    j_pa_plateform.example:
+#        class: JPa\PlateformBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
