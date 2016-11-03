@@ -15,3 +15,5 @@
 /vendor/
 /web/bundles/
 *.lock
+apigen.phar
+/api/*
