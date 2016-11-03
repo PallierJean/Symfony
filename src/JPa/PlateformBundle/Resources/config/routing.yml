@@ -1,3 +1,36 @@
-hello_the_world:
-    path:      /hello-world
-    defaults: { _controller: JPaPlateformBundle:Advert:index }
+# Route Plateform JPa
+
+jpa_plateform_home:
+    path:      /{page}
+    defaults: 
+        _controller: JPaPlateformBundle:Advert:index 
+        page:        1
+    requirements:
+        page: \d*
+
+jpa_plateform_view:
+    path:      /advert/{id}
+    defaults:  { _controller: JPaPlateformBundle:Advert:view }
+
+jpa_plateform_add:
+    path:      /add
+    defaults:  { _controller: JPaPlateformBundle:Advert:add }
+
+jpa_plateform_edit:
+    path:      /edit/{id}
+    defaults:  { _controller: JPaPlateformBundle:Advert:edit }
+    requirements:
+        page: \d+
+
+jpa_plateform_delete:
+    path:      /delete/{id}
+    defaults:  { _controller: JPaPlateformBundle:Advert:delete }
+    requirements:
+        page: \d+
+
+jpa_plateform_view_slug:
+    path:      /{year}/{slug}.{format}
+    defaults:  { _controller: JPaPlateformBundle:Advert:viewSlug }
+    requirements:
+        year:   \d{4}
+        format: html|xml
